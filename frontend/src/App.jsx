@@ -2,9 +2,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 
 // ─── CONFIG ───────────────────────────────────────────────────────────────────
 // Change this to your Render backend URL in production
-const API_BASE = (typeof window !== "undefined" && window.__BACKEND_URL__)
-  ? window.__BACKEND_URL__
-  : "http://localhost:8000/api/v1";
+const API_BASE = "https://ai-data-copilot-11fd.onrender.com/api/v1";
 
 const WS_BASE = API_BASE
   .replace("https://", "wss://")
